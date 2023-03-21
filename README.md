@@ -90,6 +90,7 @@ Windows specific:
 OS: NixOS 22.11 (Reference testing machine) \
 Platform: AMD64
 ### TCP
+
 1. OK \
 Input:
 ```
@@ -138,6 +139,7 @@ BYE
 ```
 
 ### UDP
+
 1. OK \
 Input:
 ```
@@ -204,6 +206,7 @@ OK: 3
 ```
 
 ### Other
+
 1. Missing argument \
 Input:
 ```
