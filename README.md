@@ -26,7 +26,6 @@ operator = "+" / "-" / "*" / "/"
 expr = "(" operator 2*(SP expr) ")" / 1*DIGIT
 query = "(" operator 2*(SP expr) ")"
 ```
-Source: [IPK Calculator Protocol](https://git.fit.vutbr.cz/NESFIT/IPK-Projekty/src/branch/master/Project%201/Protocol.md)
 
 #### TCP Mode 
 1. Run the application with `-m tcp` argument
@@ -88,10 +87,10 @@ Windows specific:
 ```
 
 ## Testing examples
-OS: NixOS 22.11 (Reference testing machine)
+OS: NixOS 22.11 (Reference testing machine) \
 Platform: AMD64
-#### TCP
-1. OK 
+### TCP
+1. OK \
 Input:
 ```
 HELLO
@@ -111,7 +110,7 @@ RESULT 20
 BYE
 ```
 
-2. Incorrect syntax
+2. Incorrect syntax \
 Input:
 ```
 HELLO
@@ -124,7 +123,7 @@ HELLO
 BYE
 ```
 
-3. SIGINT raise
+3. SIGINT raise \
 Input:
 ```
 HELLO 
@@ -138,8 +137,8 @@ RESULT 3
 BYE
 ```
 
-#### UDP
-1. OK
+### UDP
+1. OK \
 Input:
 ```
 (+ 1 2)
@@ -155,7 +154,7 @@ OK: 12
 OK: -1
 ```
 
-2. Mixed correct and incorrect syntax
+2. Mixed correct and incorrect syntax \
 Input:
 ```
 (+ 1 2)
@@ -183,7 +182,7 @@ ERR: Could not parse the message
 OK: -3
 ```
 
-3. String exceeding character limit of 255
+3. String exceeding character limit of 255 \
 Input:
 ```
 qtkrtoqyxhbjhmpnbidnzfqkyvkduiha ...
@@ -193,7 +192,7 @@ Output:
 stderr: Input string surpasses the allowed length of 255
 ```
 
-4. SIGINT raise
+4. SIGINT raise \
 Input:
 ```
 (+ 1 2)
@@ -204,8 +203,8 @@ Output:
 OK: 3
 ```
 
-#### Other
-1. Missing argument
+### Other
+1. Missing argument \
 Input:
 ```
 ./ipkcpc -h localhost -p 2023 
@@ -216,7 +215,7 @@ stderr: usage: ./ipkcpc -h <host> -p <port> -m <mode (tcp/udp)>
         Input parameter order is interchangeable
 ```
 
-2. Switched argument order
+2. Switched argument order \
 Input:
 ```
 ./ipkcpc -m udp -h localhost -p 2023
@@ -226,7 +225,7 @@ Output:
 No error
 ```
 
-3. Incorrect connection mode
+3. Incorrect connection mode \
 Input: 
 ```
 ./ipkcpc -h localhost -p 2023 -m smtp
@@ -235,3 +234,6 @@ Output:
 ```
 stderr: Only TCP/UDP modes are supported
 ```
+
+## Sources
+[IPK Calculator Protocol](https://git.fit.vutbr.cz/NESFIT/IPK-Projekty/src/branch/master/Project%201/Protocol.md)
