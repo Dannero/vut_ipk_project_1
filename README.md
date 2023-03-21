@@ -236,4 +236,8 @@ stderr: Only TCP/UDP modes are supported
 ```
 
 ## Sources
-[IPK Calculator Protocol](https://git.fit.vutbr.cz/NESFIT/IPK-Projekty/src/branch/master/Project%201/Protocol.md)
+Ondřej Ryšavý, 2015, TCP Client implementation, source: https://git.fit.vutbr.cz/NESFIT/IPK-Projekty/src/branch/master/Stubs/cpp/DemoTcp/client.c
+Ondřej Ryšavý, 2015, UDP Client implementation, source: https://git.fit.vutbr.cz/NESFIT/IPK-Projekty/src/branch/master/Stubs/cpp/DemoUdp/client.c
+Michal Koutenský, 2023, IPK Client Protocol, source: https://git.fit.vutbr.cz/NESFIT/IPK-Projekty/src/branch/master/Project%201/Protocol.md
+Dirk Eddelbuettel, 2010, Catch Ctrl-C in C, source: https://stackoverflow.com/a/4217052
+Neal, 2012, UDP Socket Set Timeout, https://stackoverflow.com/a/13547864
