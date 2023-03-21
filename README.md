@@ -86,6 +86,17 @@ Windows specific:
 #include <io.h>
 ```
 
+## Sources
+Vladimír Veselý, DemoTcp [online]. Publisher: Brno University of Technology, Faculty of Information Technology, January 30th 2023. [cit. 2023-03-21]. Available at: https://git.fit.vutbr.cz/NESFIT/IPK-Projekty/src/branch/master/Stubs/cpp/DemoTcp. 
+
+Vladimír Veselý, DemoTcp [online]. Publisher: Brno University of Technology, Faculty of Information Technology, January 30th 2023. [cit. 2023-03-21]. Available at: https://git.fit.vutbr.cz/NESFIT/IPK-Projekty/src/branch/master/Stubs/cpp/DemoUdp/client.c 
+
+Michal Koutenský, IPK Client Protocol [online]. Publisher: Brno University of Technology, Faculty of Information Technology, January 30th 2023. [cit. 2023-03-21]. Available at: https://git.fit.vutbr.cz/NESFIT/IPK-Projekty/src/branch/master/Project%201/Protocol.md 
+
+Dirk Eddelbuettel, Catch Ctrl-C in C [online]. Publisher: Stack Overflow, November 18th 2010. [cit. 2023-03-21]. Available at: https://stackoverflow.com/a/4217052 
+
+Neal, UDP Socket Set Timeout [online.] Publisher: Stack Overflow, November 25th 2012. [cit. 2023-03-21]. Available at: https://stackoverflow.com/a/13547864
+
 ## Testing examples
 OS: NixOS 22.11 (Reference testing machine) \
 Platform: AMD64
@@ -237,10 +248,3 @@ Output:
 ```
 stderr: Only TCP/UDP modes are supported
 ```
-
-## Sources
-Ondřej Ryšavý, 2015, TCP Client implementation, source: https://git.fit.vutbr.cz/NESFIT/IPK-Projekty/src/branch/master/Stubs/cpp/DemoTcp/client.c \
-Ondřej Ryšavý, 2015, UDP Client implementation, source: https://git.fit.vutbr.cz/NESFIT/IPK-Projekty/src/branch/master/Stubs/cpp/DemoUdp/client.c \
-Michal Koutenský, 2023, IPK Client Protocol, source: https://git.fit.vutbr.cz/NESFIT/IPK-Projekty/src/branch/master/Project%201/Protocol.md \
-Dirk Eddelbuettel, 2010, Catch Ctrl-C in C, source: https://stackoverflow.com/a/4217052 \
-Neal, 2012, UDP Socket Set Timeout, https://stackoverflow.com/a/13547864
