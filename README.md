@@ -3,8 +3,8 @@
 <hr>
 
 ## Results
-16/20
-*Issues with mangled input and missing theory in documentation
+##16/20
+* Issues with mangled input and missing theory in documentation
 
 ## Description
 Client implementation of the IPK Calculator Protocol using TCP and UDP connection protocols, written in the C programming language.
