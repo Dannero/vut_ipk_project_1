@@ -270,11 +270,11 @@ int main (int argc, const char * argv[]) {
             ///Status code checking
             if (udp_buf[1] == '\0') {
               strcpy(udp_buf, udp_buf+3);
-              printf("OK: %s\n", udp_buf);
+              printf("OK:%s\n", udp_buf);
             }
             else if (udp_buf[1] == '\1'){
               strcpy(udp_buf, udp_buf+3);
-              printf("ERR: %s\n", udp_buf);
+              printf("ERR:%s\n", udp_buf);
             }
             else {
               perror("ERROR in received message status code");
