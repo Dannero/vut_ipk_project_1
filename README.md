@@ -57,7 +57,7 @@ S: BYE
 ./ipkcpc -h localhost -p 2023 -m udp
 
 C: (+ 2 3)
-S: OK: 5
+S: OK:5
 C: (/ 4 0)
 S: ERR:<Error message>
 ```
@@ -164,10 +164,10 @@ Input:
 ```
 Output:
 ```
-OK: 3
-OK: 0
-OK: 12
-OK: -1
+OK:3
+OK:0
+OK:12
+OK:-1
 ```
 
 2. Mixed correct and incorrect syntax \
@@ -186,16 +186,16 @@ Lorem Ipsum
 ```
 Output:
 ```
-OK: 3
-ERR: Could not parse the message
-OK: 0
-ERR: Could not parse the message
-ERR: Could not parse the message
-ERR: Could not parse the message
-ERR: Could not parse the message
-ERR: Could not parse the message
-ERR: Could not parse the message
-OK: -3
+OK:3
+ERR:Could not parse the message
+OK:0
+ERR:Could not parse the message
+ERR:Could not parse the message
+ERR:Could not parse the message
+ERR:Could not parse the message
+ERR:Could not parse the message
+ERR:Could not parse the message
+OK:-3
 ```
 
 3. String exceeding character limit of 255 \
@@ -216,7 +216,7 @@ C-c
 ```
 Output:
 ```
-OK: 3
+OK:3
 ```
 
 ### Other
